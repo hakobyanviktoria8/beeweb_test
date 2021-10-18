@@ -1,0 +1,22 @@
+.SignUpWrapper {
+    padding-top: 100px;
+}
+
+.SignUp {
+    width: 400px;
+    box-shadow: 0 0 15px #b6c3e3;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.SignUp button {
+    background: rgba(15, 47, 109, 0.8);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.SignUp button:hover,
+.SignUp button:active {
+    background: #0f2f6d;
+}
