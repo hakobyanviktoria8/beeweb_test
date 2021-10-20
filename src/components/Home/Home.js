@@ -8,6 +8,7 @@ const Home = () => {
             <div className="Home_right">
                 <h1>do all things with love</h1>
             </div>
+
         </div>
     )
 };
