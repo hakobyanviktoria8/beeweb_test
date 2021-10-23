@@ -18,6 +18,7 @@ class Signin extends React.Component {
     }
     handleSubmit = (e) => {
         e.preventDefault()
+        console.log("Signin state ",this.state);
         this.props.signIn(this.state)
     }
 

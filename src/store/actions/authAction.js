@@ -1,3 +1,18 @@
+export const signUp = (newUser) => {
+    console.log("In signUp ", newUser)
+    return (dispatch, getState, {getFirebase}) => {
+        const firebase = getFirebase();
+        firebase.auth().createUserWithEmailAndPassword(
+            newUser.email,
+            newUser.password
+        ).then(() => {
+            dispatch({type: "SignUp_Success"})
+        }).catch((err) => {
+            dispatch({type: "SignUp_Error", err})
+        })
+    }
+}
+
 export const signIn = (credentials) => {
     console.log("In signin", credentials)
     return (dispatch, getState, {getFirebase}) => {
@@ -6,9 +21,9 @@ export const signIn = (credentials) => {
             credentials.email,
             credentials.password
         ).then(() => {
-            dispatch({type: "Login_Success"})
+            dispatch({type: "SignIn_Success"})
         }).catch((err) => {
-            dispatch({type: "Login_Error", err})
+            dispatch({type: "SignIn_Error", err})
         })
     }
 }
@@ -24,3 +39,4 @@ export const signOut = () => {
         })
     }
 }
+
