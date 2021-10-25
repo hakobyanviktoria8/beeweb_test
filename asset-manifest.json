@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/beeweb_test/static/css/main.c6b41687.chunk.css",
+    "main.js": "/beeweb_test/static/js/main.4ed6611e.chunk.js",
+    "main.js.map": "/beeweb_test/static/js/main.4ed6611e.chunk.js.map",
+    "runtime-main.js": "/beeweb_test/static/js/runtime-main.c6760950.js",
+    "runtime-main.js.map": "/beeweb_test/static/js/runtime-main.c6760950.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/beeweb_test/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.dd4942cc.chunk.js": "/beeweb_test/static/js/2.dd4942cc.chunk.js",
+    "static/js/2.dd4942cc.chunk.js.map": "/beeweb_test/static/js/2.dd4942cc.chunk.js.map",
+    "index.html": "/beeweb_test/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/beeweb_test/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.c6b41687.chunk.css.map": "/beeweb_test/static/css/main.c6b41687.chunk.css.map",
+    "static/js/2.dd4942cc.chunk.js.LICENSE.txt": "/beeweb_test/static/js/2.dd4942cc.chunk.js.LICENSE.txt",
+    "static/media/Home.css": "/beeweb_test/static/media/bg.938dd49c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c6760950.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.dd4942cc.chunk.js",
+    "static/css/main.c6b41687.chunk.css",
+    "static/js/main.4ed6611e.chunk.js"
+  ]
+}
