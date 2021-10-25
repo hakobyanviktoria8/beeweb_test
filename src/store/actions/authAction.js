@@ -1,5 +1,5 @@
 export const signUp = (newUser) => {
-    console.log("In signUp ", newUser)
+    // console.log("In signUp ", newUser)
     return (dispatch, getState, {getFirebase}) => {
         const firebase = getFirebase();
         firebase.auth().createUserWithEmailAndPassword(
@@ -14,7 +14,7 @@ export const signUp = (newUser) => {
 }
 
 export const signIn = (credentials) => {
-    console.log("In signin", credentials)
+    // console.log("In signin", credentials)
     return (dispatch, getState, {getFirebase}) => {
         const firebase = getFirebase();
         firebase.auth().signInWithEmailAndPassword(

@@ -11,14 +11,15 @@ class Signin extends React.Component {
         email: "",
         password: ""
     }
+
     handleChange = (e) => {
         this.setState({
             [e.target.name]: e.target.value
         })
     }
+
     handleSubmit = (e) => {
         e.preventDefault()
-        console.log("Signin state ",this.state);
         this.props.signIn(this.state)
     }
 
@@ -31,11 +32,11 @@ class Signin extends React.Component {
                 <div className="SignIn">
                     <Form onSubmit={this.handleSubmit}>
                         <FormGroup className="my-4">
-                            <Label for="exampleEmail">Your Email</Label>
+                            <Label>Your Email</Label>
                             <Input type="email" name="email" value={this.state.email} onChange={this.handleChange}/>
                         </FormGroup>
                         <FormGroup className="my-4">
-                            <Label for="examplePassword">Your Password</Label>
+                            <Label>Your Password</Label>
                             <Input type="password" name="password" value={this.state.password}
                                    onChange={this.handleChange}/>
                         </FormGroup>

@@ -1,13 +1,15 @@
-.SignInWrapper{
+.SignInWrapper {
     padding-top: 100px;
 }
-.SignIn{
+
+.SignIn {
     width: 400px;
     box-shadow: 0 0 15px #b6c3e3;
     padding: 20px;
     border-radius: 10px;
     margin: 0 auto;
 }
+
 .SignIn button {
     background: rgba(15, 47, 109, 0.8);
     width: 100%;

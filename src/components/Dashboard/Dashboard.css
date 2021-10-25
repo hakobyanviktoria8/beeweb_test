@@ -1,0 +1,28 @@
+.Dashboard {
+    padding: 100px;
+}
+
+.CreatePost {
+    box-shadow: 0 0 15px #b6c3e3;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    color: #0f2f6d;
+}
+
+.CreatePost > div {
+    background: rgba(241, 241, 241, 0.49);
+    padding: 20px;
+}
+
+.CreatePost > button {
+    background: #0f2f6d;
+    padding: 10px 50px;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.CreatePost > button:hover {
+    color: #fff;
+}

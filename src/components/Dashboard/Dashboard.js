@@ -3,19 +3,23 @@ import {connect} from "react-redux";
 import {firestoreConnect} from "react-redux-firebase";
 import {compose} from "redux";
 import {Redirect} from "react-router";
+import CreatePost from "./CreatePost";
+import "./Dashboard.css"
 
 const Dashboard = (props) => {
-    const {projects, auth} = props
-    console.log("projects ", projects)
+    const {posts, auth} = props
+    console.log("posts ", posts)
+
     if (!auth.uid) return <Redirect to="/signin"/>
     return (
-        <div>
+        <div className="Dashboard">
+            <CreatePost/>
+
             {
-                projects ?
-                    projects.map(project =>
-                        <div key={project.id}>
-                            <h2>{project.title}</h2>
-                            <p>{project.content}</p>
+                posts ?
+                    posts.map(post =>
+                        <div key={post.id}>
+                            <p>{post.text}</p>
                         </div>)
                     :
                     <p>Loading...</p>
@@ -26,7 +30,7 @@ const Dashboard = (props) => {
 
 const mapStateToProps = (state) => {
     return {
-        projects: state.firestore.ordered.projects,
+        posts: state.firestore.ordered.posts,
         auth: state.firebase.auth
     }
 }
@@ -34,6 +38,6 @@ const mapStateToProps = (state) => {
 export default compose(
     connect(mapStateToProps),
     firestoreConnect([
-        {collection: "projects"}
+        {collection: "posts"}
     ])
 )(Dashboard)

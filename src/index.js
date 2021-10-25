@@ -16,7 +16,6 @@ const store = createStore(rootReducer,
     compose(
         applyMiddleware(thunk.withExtraArgument({getFirebase, getFirestore})),
         reduxFirestore(firebase, fbConfig),
-        // reactReduxFirebase(fbConfig)
     )
 )
 const rrfProps = {

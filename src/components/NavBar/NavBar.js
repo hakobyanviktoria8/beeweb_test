@@ -6,7 +6,7 @@ import {signOut} from "../../store/actions/authAction";
 
 const NavBar = (props) => {
     const {auth} = props
-    console.log(auth)
+    // console.log(auth)
 
     return (
         <Nav className="Nav">
@@ -15,7 +15,6 @@ const NavBar = (props) => {
                 {auth.uid ?
                     <>
                         <Link to="/dashboard">Dashboard</Link>
-                        <Link to="/project">Project</Link>
                         <Link to="/" onClick={props.signOut}>SignOut</Link>
                     </>
                     :
@@ -25,11 +24,13 @@ const NavBar = (props) => {
         </Nav>
     )
 };
+
 const mapStateToProps = (state) => {
     return {
         auth: state.firebase.auth
     }
 }
+
 const mapDispatchToProps = (dispatch) => {
     return {
         signOut: () => dispatch(signOut())
