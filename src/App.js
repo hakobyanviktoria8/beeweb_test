@@ -14,6 +14,7 @@ function App() {
 
             <Switch>
                 <Route exact path="/" component={Home}/>
+                <Route exact path="/beeweb_test" component={Home}/>
                 <Route path="/signup" component={SignUp}/>
                 <Route path="/signin" component={Signin}/>
                 <Route path="/dashboard" component={Dashboard}/>
