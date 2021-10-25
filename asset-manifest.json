@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/beeweb_test/static/css/main.c6b41687.chunk.css",
-    "main.js": "/beeweb_test/static/js/main.4ed6611e.chunk.js",
-    "main.js.map": "/beeweb_test/static/js/main.4ed6611e.chunk.js.map",
+    "main.js": "/beeweb_test/static/js/main.b62f3302.chunk.js",
+    "main.js.map": "/beeweb_test/static/js/main.b62f3302.chunk.js.map",
     "runtime-main.js": "/beeweb_test/static/js/runtime-main.c6760950.js",
     "runtime-main.js.map": "/beeweb_test/static/js/runtime-main.c6760950.js.map",
     "static/css/2.0a9ec390.chunk.css": "/beeweb_test/static/css/2.0a9ec390.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.dd4942cc.chunk.js",
     "static/css/main.c6b41687.chunk.css",
-    "static/js/main.4ed6611e.chunk.js"
+    "static/js/main.b62f3302.chunk.js"
   ]
 }
